@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Ganesh Mahata — B.Tech Biotechnology | IIT Delhi | Portfolio</title>
+  <meta name="description" content="Portfolio of Ganesh Mahata, B.Tech Biotechnology student at IIT Delhi. Passionate about AI, Embedded Systems, IoT, and Full Stack Web Development." />
+  <meta name="keywords" content="Ganesh Mahata, IIT Delhi, Biotechnology, AI, Embedded Systems, IoT, Web Development, Portfolio" />
+  <meta name="author" content="Ganesh Mahata" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://MahataG.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://MahataG.github.io/" />
+  <meta property="og:title"       content="Ganesh Mahata — Portfolio" />
+  <meta property="og:description" content="B.Tech Biotechnology student at IIT Delhi interested in AI, IoT, Embedded Systems, and Web Development." />
+  <meta property="og:image"       content="https://MahataG.github.io/assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Ganesh Mahata — Portfolio" />
+  <meta name="twitter:description" content="B.Tech Biotechnology at IIT Delhi | AI · IoT · Web Dev" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon"         href="assets/icons/apple-touch-icon.png" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Theme script — MUST be first to avoid FOUC -->
+  <script src="js/theme.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ganesh Mahata",
+    "url": "https://MahataG.github.io/",
+    "jobTitle": "Undergraduate Student — B.Tech Biotechnology",
+    "affiliation": {
+      "@type": "EducationalOrganization",
+      "name": "Indian Institute of Technology Delhi"
+    },
+    "knowsAbout": ["Biotechnology","Artificial Intelligence","Embedded Systems","IoT","Web Development"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Jawahar Navodaya Vidyalaya, Bankura"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE LOADER
+  ═══════════════════════════════════════════════════════════ -->
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo">GM</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Ganesh Mahata Home">
+        <div class="nav-logo-icon" aria-hidden="true">GM</div>
+        <span class="nav-logo-text">Ganesh <span>Mahata</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html"                  class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="pages/about.html"            class="nav-link">About</a></li>
+        <li><a href="pages/about.html#education"  class="nav-link">Education</a></li>
+        <li><a href="pages/about.html#skills"     class="nav-link">Skills</a></li>
+        <li><a href="pages/projects.html"         class="nav-link">Projects</a></li>
+        <li><a href="pages/about.html#research"   class="nav-link">Research</a></li>
+        <li><a href="pages/about.html#certs"      class="nav-link">Certificates</a></li>
+        <li><a href="pages/resume.html"           class="nav-link">Resume</a></li>
+        <li><a href="pages/contact.html"          class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle theme">
+          <span class="icon-moon" aria-hidden="true">🌙</span>
+          <span class="icon-sun"  aria-hidden="true">☀️</span>
+        </button>
+
+        <a href="assets/resume/Ganesh_Mahata_CV.pdf" class="btn btn-primary btn-sm"
+           download="Ganesh_Mahata_CV.pdf" data-resume-download
+           aria-label="Download Resume">
+          ↓ Resume
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="index.html"                  class="mobile-nav-link">🏠 Home</a></li>
+      <li><a href="pages/about.html"            class="mobile-nav-link">👤 About</a></li>
+      <li><a href="pages/about.html#education"  class="mobile-nav-link">🎓 Education</a></li>
+      <li><a href="pages/about.html#skills"     class="mobile-nav-link">⚡ Skills</a></li>
+      <li><a href="pages/projects.html"         class="mobile-nav-link">🚀 Projects</a></li>
+      <li><a href="pages/about.html#research"   class="mobile-nav-link">🔬 Research</a></li>
+      <li><a href="pages/about.html#certs"      class="mobile-nav-link">🏆 Certificates</a></li>
+      <li><a href="pages/resume.html"           class="mobile-nav-link">📄 Resume</a></li>
+      <li><a href="pages/contact.html"          class="mobile-nav-link">✉️ Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="home" class="hero" aria-labelledby="hero-name">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="hero-content">
+          <!-- Greeting -->
+          <div class="hero-greeting" aria-hidden="true">
+            <span class="emoji">👋</span> Welcome to my portfolio
+          </div>
+
+          <!-- Name -->
+          <h1 id="hero-name" class="hero-name">
+            Hi, I'm<br>
+            <span class="name-highlight">Ganesh Mahata</span>
+          </h1>
+
+          <!-- Typed Roles -->
+          <p class="hero-roles">
+            <span class="typed-text"
+                  data-phrases='["B.Tech Student at IIT Delhi","Biotechnology Enthusiast","Embedded Systems Developer","IoT & Automation Builder","Full Stack Web Developer","AI & ML Learner"]'></span><span
+                  class="typed-cursor" aria-hidden="true">|</span>
+          </p>
+
+          <!-- Description -->
+          <p class="hero-desc">
+            Undergraduate student at <strong>IIT Delhi</strong> combining
+            Biotechnology, Artificial Intelligence, Embedded Systems, and
+            Full Stack Web Development to build solutions that matter.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-actions">
+            <a href="pages/projects.html" class="btn btn-primary btn-lg">
+              🚀 View Projects
+            </a>
+            <a href="pages/contact.html" class="btn btn-secondary btn-lg">
+              ✉️ Get In Touch
+            </a>
+            <a href="assets/resume/Ganesh_Mahata_CV.pdf"
+               class="btn btn-ghost btn-lg"
+               download="Ganesh_Mahata_CV.pdf"
+               data-resume-download>
+              📄 Download CV
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-count="10" data-suffix="+">0</div>
+              <div class="hero-stat-label">Projects</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-count="7" data-suffix="+">0</div>
+              <div class="hero-stat-label">Languages</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-count="6" data-suffix="+">0</div>
+              <div class="hero-stat-label">Research Areas</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-count="3" data-suffix="yr">0</div>
+              <div class="hero-stat-label">At IIT Delhi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-icon">
+          <div class="hero-scroll-dot"></div>
+        </div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ABOUT PREVIEW
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="about-preview" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-preview">
+          <!-- Left: Avatar -->
+          <div class="about-image-wrapper reveal-left">
+            <img src="assets/images/profile.png" alt="Ganesh Mahata" class="about-avatar" style="object-fit: cover;">
+            <div class="about-badge">
+              <div class="about-badge-icon">🎓</div>
+              <div class="about-badge-text">Currently at</div>
+              <div class="about-badge-value">IIT Delhi</div>
+            </div>
+          </div>
+
+          <!-- Right: Info -->
+          <div class="about-info reveal-right">
+            <div class="about-info-tag">
+              <span>✨</span> About Me
+            </div>
+            <h2 id="about-heading">
+              Engineering solutions that make a difference
+            </h2>
+            <p>
+              I'm <strong>Ganesh Mahata</strong>, a B.Tech student in the Department of
+              Biotechnology at the <strong>Indian Institute of Technology Delhi</strong>.
+              I combine biotechnology with cutting-edge technologies like AI, embedded
+              systems, and web development.
+            </p>
+            <p>
+              I previously studied at <strong>Jawahar Navodaya Vidyalaya, Bankura</strong>
+              and am now pursuing my passion for engineering solutions that bridge
+              biology and technology.
+            </p>
+
+            <div class="about-highlights">
+              <div class="about-highlight-item">
+                <div class="about-highlight-icon">🏛️</div>
+                <span>IIT Delhi — B.Tech Biotechnology</span>
+              </div>
+              <div class="about-highlight-item">
+                <div class="about-highlight-icon">🤖</div>
+                <span>AI &amp; Machine Learning</span>
+              </div>
+              <div class="about-highlight-item">
+                <div class="about-highlight-icon">📡</div>
+                <span>Embedded Systems &amp; IoT</span>
+              </div>
+              <div class="about-highlight-item">
+                <div class="about-highlight-icon">🌐</div>
+                <span>Full Stack Web Development</span>
+              </div>
+              <div class="about-highlight-item">
+                <div class="about-highlight-icon">🔬</div>
+                <span>Biotechnology Research</span>
+              </div>
+              <div class="about-highlight-item">
+                <div class="about-highlight-icon">🌍</div>
+                <span>Open Source Enthusiast</span>
+              </div>
+            </div>
+
+            <div class="flex gap-md" style="flex-wrap:wrap;">
+              <a href="pages/about.html" class="btn btn-primary">Learn More →</a>
+              <a href="pages/contact.html" class="btn btn-secondary">Let's Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SKILLS PREVIEW
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="skills-preview" class="section" style="background: var(--bg-elevated);" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">⚡ Technical Skills</div>
+          <h2 id="skills-heading" class="section-title">What I Work With</h2>
+          <p class="section-subtitle">
+            A diverse toolkit spanning software, hardware, and research — built through
+            hands-on projects and continuous learning.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card reveal delay-1">
+            <div class="skill-category-icon" aria-hidden="true">💻</div>
+            <h3 class="skill-category-name">Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Embedded Systems -->
+          <div class="skill-category-card reveal delay-2">
+            <div class="skill-category-icon" aria-hidden="true">🔌</div>
+            <h3 class="skill-category-name">Embedded Systems &amp; IoT</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Arduino UNO</span>
+              <span class="skill-tag">ESP32</span>
+              <span class="skill-tag">ESP8266</span>
+              <span class="skill-tag">NodeMCU</span>
+              <span class="skill-tag">RFID</span>
+              <span class="skill-tag">OLED</span>
+              <span class="skill-tag">Wi-Fi IoT</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card reveal delay-3">
+            <div class="skill-category-icon" aria-hidden="true">🌐</div>
+            <h3 class="skill-category-name">Web Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">GitHub Pages</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card reveal delay-4">
+            <div class="skill-category-icon" aria-hidden="true">🗄️</div>
+            <h3 class="skill-category-name">Databases &amp; Cloud</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Supabase</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Google Sheets API</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category-card reveal delay-5">
+            <div class="skill-category-icon" aria-hidden="true">🛠️</div>
+            <h3 class="skill-category-name">Tools &amp; Platforms</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Grafana</span>
+              <span class="skill-tag">LTspice</span>
+              <span class="skill-tag">SimulIDE</span>
+              <span class="skill-tag">Canva</span>
+            </div>
+          </div>
+
+          <!-- Interests -->
+          <div class="skill-category-card reveal delay-6">
+            <div class="skill-category-icon" aria-hidden="true">🧪</div>
+            <h3 class="skill-category-name">Research &amp; AI</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Biomedical Devices</span>
+              <span class="skill-tag">Smart Healthcare</span>
+              <span class="skill-tag">Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 2.5rem;">
+          <a href="pages/about.html#skills" class="btn btn-secondary">
+            View All Skills →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FEATURED PROJECTS PREVIEW
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="projects-preview" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">🚀 Featured Projects</div>
+          <h2 id="projects-heading" class="section-title">What I've Built</h2>
+          <p class="section-subtitle">
+            Hands-on projects spanning embedded systems, web development, IoT, and more.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal delay-1" data-category="embedded">
+            <div class="project-thumbnail" style="background: linear-gradient(135deg,#1e3a5f,#0ea5e9);">
+              📡
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-status"><span class="dot"></span>Completed</span>
+                <span class="badge badge-secondary">IoT</span>
+              </div>
+              <h3 class="project-title">ESP32 IoT Monitoring System</h3>
+              <p class="project-desc">
+                A real-time sensor data monitoring system built with ESP32, featuring
+                Wi-Fi connectivity, OLED display output, and cloud data logging via
+                Google Sheets integration.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Wi-Fi</span>
+                <span class="tech-tag">OLED</span>
+                <span class="tech-tag">Google Sheets</span>
+              </div>
+              <div class="project-links">
+                <a href="pages/projects.html" class="btn btn-secondary btn-sm">Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal delay-2" data-category="web">
+            <div class="project-thumbnail" style="background: linear-gradient(135deg,#312e81,#7c3aed);">
+              🌐
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-status"><span class="dot"></span>Completed</span>
+                <span class="badge">Web</span>
+              </div>
+              <h3 class="project-title">IIT Department Website</h3>
+              <p class="project-desc">
+                A fully responsive static website built for an IIT department, featuring
+                structured content pages, faculty listings, events section, and a
+                clean academic design.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+              <div class="project-links">
+                <a href="pages/projects.html" class="btn btn-secondary btn-sm">Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal delay-3" data-category="data">
+            <div class="project-thumbnail" style="background: linear-gradient(135deg,#064e3b,#059669);">
+              📊
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-status"><span class="dot"></span>Completed</span>
+                <span class="badge badge-success">Data</span>
+              </div>
+              <h3 class="project-title">Grafana IoT Dashboard</h3>
+              <p class="project-desc">
+                A real-time data visualization dashboard using Grafana, connected to
+                IoT sensor streams. Displays live metrics with beautiful charts,
+                alerts, and historical trends.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Grafana</span>
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">InfluxDB</span>
+                <span class="tech-tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="pages/projects.html" class="btn btn-secondary btn-sm">Details →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top: 2.5rem;">
+          <a href="pages/projects.html" class="btn btn-primary">
+            View All Projects →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         RESEARCH INTERESTS PREVIEW
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="research-preview" class="section" style="background: var(--bg-elevated);" aria-labelledby="research-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">🔬 Research</div>
+          <h2 id="research-heading" class="section-title">Research Interests</h2>
+          <p class="section-subtitle">
+            Areas I'm passionate about exploring at the intersection of biotechnology
+            and engineering.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <div class="research-card reveal delay-1">
+            <div class="research-icon" aria-hidden="true">🏥</div>
+            <h3 class="research-title">Smart Healthcare</h3>
+            <p class="research-desc">
+              Developing intelligent healthcare solutions using IoT sensors, AI diagnostics,
+              and real-time monitoring to improve patient outcomes.
+            </p>
+          </div>
+
+          <div class="research-card reveal delay-2">
+            <div class="research-icon" aria-hidden="true">🫀</div>
+            <h3 class="research-title">Biomedical Devices</h3>
+            <p class="research-desc">
+              Designing embedded medical devices that interface biological systems with
+              electronic sensors for non-invasive health monitoring.
+            </p>
+          </div>
+
+          <div class="research-card reveal delay-3">
+            <div class="research-icon" aria-hidden="true">🤖</div>
+            <h3 class="research-title">AI for Biotechnology</h3>
+            <p class="research-desc">
+              Applying machine learning models to analyze biological data, predict
+              protein structures, and accelerate drug discovery processes.
+            </p>
+          </div>
+
+          <div class="research-card reveal delay-4">
+            <div class="research-icon" aria-hidden="true">📡</div>
+            <h3 class="research-title">IoT-Based Monitoring</h3>
+            <p class="research-desc">
+              Building wireless sensor networks for environmental and health monitoring,
+              transmitting data to cloud platforms for analysis.
+            </p>
+          </div>
+
+          <div class="research-card reveal delay-5">
+            <div class="research-icon" aria-hidden="true">💊</div>
+            <h3 class="research-title">Embedded Medical Devices</h3>
+            <p class="research-desc">
+              Creating low-cost, efficient embedded systems for point-of-care testing
+              and remote patient monitoring in resource-limited settings.
+            </p>
+          </div>
+
+          <div class="research-card reveal delay-6">
+            <div class="research-icon" aria-hidden="true">🌱</div>
+            <h3 class="research-title">Sustainable Technologies</h3>
+            <p class="research-desc">
+              Exploring bio-inspired and energy-efficient technologies that minimize
+              environmental impact while maximizing social benefit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CTA SECTION
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="cta" class="section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="card card-elevated text-center reveal" style="
+          background: var(--gradient-primary);
+          border: none;
+          max-width: 760px;
+          margin: 0 auto;
+          padding: 4rem 3rem;
+        ">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
+          <h2 id="cta-heading" style="color: white; font-size: 2rem; margin-bottom: 1rem;">
+            Let's Build Something Great Together
+          </h2>
+          <p style="color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 2rem; font-size: 1.05rem;">
+            Whether it's a research collaboration, a project idea, or just a tech chat —
+            I'd love to connect!
+          </p>
+          <div class="flex flex-center gap-md" style="flex-wrap:wrap;">
+            <a href="pages/contact.html"
+               class="btn btn-lg"
+               style="background: white; color: var(--primary-dark); font-weight: 700;">
+              ✉️ Get In Touch
+            </a>
+            <a href="pages/projects.html"
+               class="btn btn-ghost btn-lg"
+               style="color: white; border-color: rgba(255,255,255,0.5);">
+              🚀 See My Work
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="Home">
+            <div class="footer-logo-icon">GM</div>
+            <span class="footer-logo-text">Ganesh Mahata</span>
+          </a>
+          <p class="footer-tagline">
+            B.Tech Biotechnology student at IIT Delhi, building at the intersection of
+            biology, AI, embedded systems, and web development.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com/MahataG" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="GitHub profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="LinkedIn profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:iitd.mahata@gmail.com" class="social-link" aria-label="Send email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html"                  class="footer-link">Home</a></li>
+            <li><a href="pages/about.html"            class="footer-link">About</a></li>
+            <li><a href="pages/about.html#education"  class="footer-link">Education</a></li>
+            <li><a href="pages/about.html#skills"     class="footer-link">Skills</a></li>
+          </ul>
+        </div>
+
+        <!-- More -->
+        <div>
+          <h3 class="footer-col-title">More</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="pages/projects.html"         class="footer-link">Projects</a></li>
+            <li><a href="pages/about.html#research"   class="footer-link">Research</a></li>
+            <li><a href="pages/about.html#certs"      class="footer-link">Certificates</a></li>
+            <li><a href="pages/resume.html"           class="footer-link">Resume</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect -->
+        <div>
+          <h3 class="footer-col-title">Connect</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="pages/contact.html"          class="footer-link">Contact Me</a></li>
+            <li><a href="https://github.com/MahataG" target="_blank" rel="noopener" class="footer-link">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/"   target="_blank" rel="noopener" class="footer-link">LinkedIn</a></li>
+            <li><a href="assets/resume/Ganesh_Mahata_CV.pdf"
+                   download="Ganesh_Mahata_CV.pdf"
+                   class="footer-link">Download CV</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © <span data-year></span> <span>Ganesh Mahata</span>.
+          Built with ❤️ by
+          <a href="index.html" style="color:var(--primary);">Ganesh Mahata</a>
+        </p>
+        <div class="flex gap-md">
+          <a href="pages/about.html"   class="footer-link">About</a>
+          <a href="pages/contact.html" class="footer-link">Contact</a>
+          <a href="pages/resume.html"  class="footer-link">Resume</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

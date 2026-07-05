@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Resume — Ganesh Mahata | IIT Delhi Biotechnology</title>
+  <meta name="description" content="Resume of Ganesh Mahata — B.Tech Biotechnology student at IIT Delhi. View and download the complete CV." />
+  <meta name="keywords" content="Ganesh Mahata, Resume, CV, IIT Delhi, Biotechnology, Download" />
+  <meta name="author" content="Ganesh Mahata" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://MahataG.github.io/pages/resume.html" />
+
+  <meta property="og:title"       content="Resume — Ganesh Mahata" />
+  <meta property="og:description" content="View and download Ganesh Mahata's complete CV — B.Tech Biotechnology, IIT Delhi." />
+  <meta property="og:url"         content="https://MahataG.github.io/pages/resume.html" />
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/dark.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <script src="../js/theme.js"></script>
+
+  <style>
+    /* Resume page-specific styles */
+    .resume-section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid rgba(99,102,241,0.2);
+    }
+
+    .resume-entry {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .resume-entry:last-child { border-bottom: none; }
+
+    .resume-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.35rem;
+      flex-wrap: wrap;
+    }
+
+    .resume-entry-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .resume-entry-date {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--primary);
+      background: rgba(99,102,241,0.08);
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+      font-family: var(--font-code);
+    }
+
+    .resume-entry-org {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-entry-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .resume-entry-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .resume-main-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .resume-main-card + .resume-main-card {
+      margin-top: 1.5rem;
+    }
+
+    .print-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .resume-wrapper {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo">GM</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo" aria-label="Ganesh Mahata Home">
+        <div class="nav-logo-icon" aria-hidden="true">GM</div>
+        <span class="nav-logo-text">Ganesh <span>Mahata</span></span>
+      </a>
+      <ul class="nav-menu" role="list">
+        <li><a href="../index.html"        class="nav-link">Home</a></li>
+        <li><a href="about.html"           class="nav-link">About</a></li>
+        <li><a href="about.html#education" class="nav-link">Education</a></li>
+        <li><a href="about.html#skills"    class="nav-link">Skills</a></li>
+        <li><a href="projects.html"        class="nav-link">Projects</a></li>
+        <li><a href="about.html#research"  class="nav-link">Research</a></li>
+        <li><a href="about.html#certs"     class="nav-link">Certificates</a></li>
+        <li><a href="resume.html"          class="nav-link active" aria-current="page">Resume</a></li>
+        <li><a href="contact.html"         class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-moon" aria-hidden="true">🌙</span>
+          <span class="icon-sun"  aria-hidden="true">☀️</span>
+        </button>
+        <a href="../assets/resume/Ganesh_Mahata_CV.pdf"
+           class="btn btn-primary btn-sm" download="Ganesh_Mahata_CV.pdf"
+           data-resume-download>↓ Resume</a>
+        <button class="hamburger" id="hamburger"
+                aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="../index.html"         class="mobile-nav-link">🏠 Home</a></li>
+      <li><a href="about.html"            class="mobile-nav-link">👤 About</a></li>
+      <li><a href="about.html#education"  class="mobile-nav-link">🎓 Education</a></li>
+      <li><a href="about.html#skills"     class="mobile-nav-link">⚡ Skills</a></li>
+      <li><a href="projects.html"         class="mobile-nav-link">🚀 Projects</a></li>
+      <li><a href="about.html#research"   class="mobile-nav-link">🔬 Research</a></li>
+      <li><a href="about.html#certs"      class="mobile-nav-link">🏆 Certificates</a></li>
+      <li><a href="resume.html"           class="mobile-nav-link">📄 Resume</a></li>
+      <li><a href="contact.html"          class="mobile-nav-link">✉️ Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <header class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <span class="breadcrumb-item"><a href="../index.html">Home</a></span>
+            <span class="breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="breadcrumb-item active" aria-current="page">Resume</span>
+          </nav>
+          <div class="page-hero-tag" aria-hidden="true">📄 CV</div>
+          <h1 id="page-title" class="page-hero-title">Resume</h1>
+          <p class="page-hero-subtitle">
+            A complete overview of my education, skills, projects, and professional journey.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- RESUME CONTENT -->
+    <section id="resume" class="section" aria-labelledby="resume-heading">
+      <div class="container">
+        <div class="resume-wrapper"
+             style="display:grid;grid-template-columns:280px 1fr;gap:2rem;align-items:start;">
+
+          <!-- ── SIDEBAR ── -->
+          <aside class="resume-sidebar" aria-label="Contact and quick info">
+            <div class="resume-sidebar-card">
+              <img src="../assets/images/profile.jpeg" alt="Ganesh Mahata" class="resume-avatar" style="object-fit: cover;">
+              <h2 class="resume-name">Ganesh Mahata</h2>
+              <p class="resume-role">B.Tech Biotechnology<br>IIT Delhi</p>
+
+              <div class="resume-divider"></div>
+
+              <!-- Contact info -->
+              <div>
+                <div class="resume-meta-item">
+                  <span class="resume-meta-icon">🏛️</span>
+                  <span>IIT Delhi, New Delhi</span>
+                </div>
+                <div class="resume-meta-item">
+                  <span>iitd.mahata@gmail.com</span>
+                </div>
+                <div class="resume-meta-item">
+                  <span class="resume-meta-icon">🐙</span>
+                  <a href="https://github.com/MahataG" target="_blank" rel="noopener"
+                     style="color:var(--primary);font-size:0.85rem;">github.com/MahataG</a>
+                </div>
+                <div class="resume-meta-item">
+                  <span class="resume-meta-icon">💼</span>
+                  <a href="https://linkedin.com/in/" target="_blank" rel="noopener"
+                     style="color:var(--primary);font-size:0.85rem;">LinkedIn Profile</a>
+                </div>
+              </div>
+
+              <div class="resume-divider"></div>
+
+              <!-- Languages -->
+              <div>
+                <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.5rem;">Languages</p>
+                <div class="resume-meta-item">
+                  <span class="resume-meta-icon">🇬🇧</span><span>English</span>
+                </div>
+                <div class="resume-meta-item">
+                  <span class="resume-meta-icon">🇮🇳</span><span>Hindi</span>
+                </div>
+                <div class="resume-meta-item">
+                  <span class="resume-meta-icon">🏴</span><span>Bengali</span>
+                </div>
+              </div>
+
+              <div class="resume-divider"></div>
+
+              <!-- Download -->
+              <div style="display:flex;flex-direction:column;gap:0.6rem;">
+                <a href="../assets/resume/Ganesh_Mahata_CV.pdf"
+                   download="Ganesh_Mahata_CV.pdf"
+                   class="btn btn-primary print-btn"
+                   data-resume-download>
+                  ↓ Download PDF
+                </a>
+                <button onclick="window.print()" class="btn btn-secondary print-btn">
+                  🖨️ Print
+                </button>
+              </div>
+            </div>
+          </aside>
+
+          <!-- ── MAIN CONTENT ── -->
+          <div>
+            <!-- Professional Summary -->
+            <div class="resume-main-card reveal">
+              <h2 class="resume-section-title">📋 Professional Summary</h2>
+              <p style="font-size:0.95rem;line-height:1.8;color:var(--text-secondary);">
+                I am an undergraduate student at the <strong>Indian Institute of Technology Delhi</strong>
+                pursuing a B.Tech in <strong>Biotechnology</strong>. I have strong interests in
+                Artificial Intelligence, Embedded Systems, Internet of Things, and Full Stack Web
+                Development. I enjoy building practical engineering solutions, learning new
+                technologies, and developing software and hardware projects that solve real-world
+                problems. My career goal is to combine biotechnology, embedded systems, AI, and
+                software development to create impactful technologies.
+              </p>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-main-card reveal delay-1">
+              <h2 class="resume-section-title">🎓 Education</h2>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div>
+                    <div class="resume-entry-title">Bachelor of Technology (B.Tech) — Biotechnology</div>
+                    <div class="resume-entry-org">🏛️ Indian Institute of Technology Delhi (IIT Delhi)</div>
+                  </div>
+                  <span class="resume-entry-date">2022 – Present</span>
+                </div>
+                <p class="resume-entry-desc">
+                  Pursuing core biotechnology and bioengineering coursework alongside self-driven
+                  technical projects in embedded systems, IoT, AI, and web development.
+                </p>
+                <div class="resume-entry-tags">
+                  <span class="badge">B.Tech</span>
+                  <span class="badge badge-secondary">Biotechnology</span>
+                  <span class="badge badge-success">Ongoing</span>
+                </div>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div>
+                    <div class="resume-entry-title">Senior Secondary — Class XII (Science)</div>
+                    <div class="resume-entry-org">🏫 Jawahar Navodaya Vidyalaya (JNV), Bankura</div>
+                  </div>
+                  <span class="resume-entry-date">Until 2022</span>
+                </div>
+                <p class="resume-entry-desc">
+                  Science stream — Physics, Chemistry, Mathematics, Biology. Centrally-funded
+                  residential school with strong academic foundation.
+                </p>
+                <div class="resume-entry-tags">
+                  <span class="badge badge-accent">Class XII</span>
+                  <span class="badge">PCM + Biology</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="resume-main-card reveal delay-2">
+              <h2 class="resume-section-title">⚡ Technical Skills</h2>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+                <div>
+                  <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.5rem;">Languages</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">SQL</span>
+                  </div>
+                </div>
+                <div>
+                  <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.5rem;">Embedded / IoT</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Arduino UNO</span>
+                    <span class="skill-tag">ESP32</span>
+                    <span class="skill-tag">ESP8266</span>
+                    <span class="skill-tag">NodeMCU</span>
+                    <span class="skill-tag">RFID</span>
+                    <span class="skill-tag">OLED</span>
+                  </div>
+                </div>
+                <div>
+                  <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.5rem;">Web Development</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Responsive</span>
+                    <span class="skill-tag">GitHub Pages</span>
+                  </div>
+                </div>
+                <div>
+                  <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.5rem;">Tools &amp; Databases</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Supabase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="resume-main-card reveal delay-3">
+              <h2 class="resume-section-title">🚀 Key Projects</h2>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">ESP32 IoT Monitoring System</div>
+                  <span class="resume-entry-date">2024</span>
+                </div>
+                <p class="resume-entry-desc">
+                  Real-time sensor monitoring with ESP32, OLED display, and Google Sheets cloud logging.
+                </p>
+                <div class="resume-entry-tags">
+                  <span class="tech-tag">ESP32</span>
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">Wi-Fi</span>
+                </div>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">Grafana IoT Dashboard</div>
+                  <span class="resume-entry-date">2024</span>
+                </div>
+                <p class="resume-entry-desc">
+                  Live data visualization using Grafana connected to IoT sensor streams.
+                </p>
+                <div class="resume-entry-tags">
+                  <span class="tech-tag">Grafana</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">ESP32</span>
+                </div>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">IIT Department Website</div>
+                  <span class="resume-entry-date">2023</span>
+                </div>
+                <p class="resume-entry-desc">
+                  Fully responsive academic website with structured content and clean UI.
+                </p>
+                <div class="resume-entry-tags">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">RFID Access Control System</div>
+                  <span class="resume-entry-date">2023</span>
+                </div>
+                <p class="resume-entry-desc">
+                  RFID-based door access control with Arduino and event logging.
+                </p>
+                <div class="resume-entry-tags">
+                  <span class="tech-tag">Arduino</span>
+                  <span class="tech-tag">RFID</span>
+                  <span class="tech-tag">C++</span>
+                </div>
+              </div>
+
+              <div style="text-align:right;margin-top:1rem;">
+                <a href="projects.html" class="btn btn-secondary btn-sm">
+                  View All Projects →
+                </a>
+              </div>
+            </div>
+
+            <!-- Research Interests -->
+            <div class="resume-main-card reveal delay-4">
+              <h2 class="resume-section-title">🔬 Research Interests</h2>
+              <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                <span class="badge">Smart Healthcare</span>
+                <span class="badge badge-secondary">Biomedical Devices</span>
+                <span class="badge">AI for Biotechnology</span>
+                <span class="badge badge-secondary">Embedded Medical Devices</span>
+                <span class="badge">IoT-Based Monitoring</span>
+                <span class="badge badge-success">Sustainable Technologies</span>
+              </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="resume-main-card reveal delay-5">
+              <h2 class="resume-section-title">🏆 Certifications</h2>
+
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">Python Programming Fundamentals</div>
+                  <span class="resume-entry-date">Online</span>
+                </div>
+              </div>
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">HTML, CSS &amp; JavaScript — Full Course</div>
+                  <span class="resume-entry-date">Online</span>
+                </div>
+              </div>
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">Git &amp; GitHub — Version Control</div>
+                  <span class="resume-entry-date">Online</span>
+                </div>
+              </div>
+              <div class="resume-entry">
+                <div class="resume-entry-header">
+                  <div class="resume-entry-title">Arduino &amp; ESP32 Development</div>
+                  <span class="resume-entry-date">Self-study</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Current Learning -->
+            <div class="resume-main-card reveal delay-6">
+              <h2 class="resume-section-title">📚 Currently Learning</h2>
+              <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                <span class="badge badge-accent">Advanced JavaScript</span>
+                <span class="badge badge-accent">Git &amp; GitHub</span>
+                <span class="badge badge-accent">ESP32 Development</span>
+                <span class="badge badge-accent">Grafana Dashboards</span>
+                <span class="badge badge-accent">Database Integration</span>
+                <span class="badge badge-accent">Cloud Services</span>
+              </div>
+            </div>
+
+          </div><!-- /main content -->
+        </div><!-- /resume-wrapper -->
+      </div>
+    </section>
+
+    <!-- PDF Download CTA -->
+    <section class="section" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="card card-elevated text-center reveal"
+             style="background: var(--gradient-primary); border: none; max-width: 660px; margin: 0 auto; padding: 3rem 2.5rem;">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">📄</div>
+          <h2 style="color:white;margin-bottom:0.75rem;">Download Full Resume</h2>
+          <p style="color:rgba(255,255,255,0.85);margin-bottom:2rem;">
+            Get a beautifully formatted PDF version of my complete resume for offline reference.
+          </p>
+          <div class="flex flex-center gap-md" style="flex-wrap:wrap;">
+            <a href="../assets/resume/Ganesh_Mahata_CV.pdf"
+               download="Ganesh_Mahata_CV.pdf"
+               class="btn btn-lg"
+               style="background:white;color:var(--primary-dark);font-weight:700;"
+               data-resume-download>
+              ↓ Download PDF
+            </a>
+            <button onclick="window.print()"
+                    class="btn btn-ghost btn-lg"
+                    style="color:white;border-color:rgba(255,255,255,0.5);">
+              🖨️ Print Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo" aria-label="Home">
+            <div class="footer-logo-icon">GM</div>
+            <span class="footer-logo-text">Ganesh Mahata</span>
+          </a>
+          <p class="footer-tagline">B.Tech Biotechnology student at IIT Delhi.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com/MahataG" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Pages</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html"    class="footer-link">About</a></li>
+            <li><a href="projects.html" class="footer-link">Projects</a></li>
+            <li><a href="resume.html"   class="footer-link">Resume</a></li>
+            <li><a href="contact.html"  class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Resume Sections</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#" class="footer-link" onclick="return false;">Education</a></li>
+            <li><a href="#" class="footer-link" onclick="return false;">Skills</a></li>
+            <li><a href="#" class="footer-link" onclick="return false;">Projects</a></li>
+            <li><a href="#" class="footer-link" onclick="return false;">Research</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Connect</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="contact.html"                                       class="footer-link">Contact Me</a></li>
+            <li><a href="https://github.com/MahataG" target="_blank" rel="noopener" class="footer-link">GitHub</a></li>
+            <li><a href="../assets/resume/Ganesh_Mahata_CV.pdf" download     class="footer-link">Download PDF</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span data-year></span> Ganesh Mahata. All rights reserved.</p>
+        <div class="flex gap-md">
+          <a href="about.html"   class="footer-link">About</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="projects.html"class="footer-link">Projects</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animation.js"></script>
+</body>
+</html>
